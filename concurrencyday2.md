@@ -242,6 +242,8 @@ Consider the above example of a linked process. Modify the `LinkedProcess` modul
 - Basically a process with all the convenience functions built-in
 Callbacks: init/1, handle_call/3, handle_cast/2
 
+Elxiir Schools lesson : https://elixirschool.com/en/lessons/advanced/otp_concurrency
+
 Intro to Genserver: https://www.youtube.com/watch?v=C9iqVCcLbdU&t=60s
 
 https://elixir-lang.org/getting-started/mix-otp/genserver.html
