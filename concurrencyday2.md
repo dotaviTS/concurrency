@@ -166,7 +166,7 @@ In Elixir, processes don't share state. They communicate by sending and receivin
 Sending and receiving messages between processes
 Introduction to recursive processes for continuous message listening
 
-Example: This is the greeter module.
+### Example: This is the greeter module.
 
      defmodule Greeter do
       def start do
@@ -195,7 +195,7 @@ Example: This is the greeter module.
     
 5.  **Concurrency**: Multiple instances of the `Greeter` process can be spawned simultaneously, and they will operate independently of each other. They can all receive and handle messages concurrently.
 
-#### Exercise:
+#### Exercise 1:
 
 -   Modify the Greeter module to handle different types of greetings (e.g., Good Morning, Good Evening) based on messages sent to the process.
 
@@ -203,6 +203,8 @@ Example: This is the greeter module.
 
 Process Links and process dictionaries
 -  Linking processes means if one fails, the linked processes can be notified. Process dictionaries are like scratch spaces for processes, but their use is generally discouraged.
+
+-  Example: Linked Process
 
         defmodule LinkedProcess do
           def start_link do
@@ -228,7 +230,7 @@ https://ibb.co/Q92h9zT
 - How to handle errors and gracefully shut down a process.
 Error handling and process termination
 
-### Exercise Question
+### Exercise Question : Linked Process
 
 Consider the above example of a linked process. Modify the `LinkedProcess` module to include a function that sends messages to the loop. Then, write code to spawn the linked process, send it several messages, and finally kill it.
 
@@ -243,8 +245,7 @@ Consider the above example of a linked process. Modify the `LinkedProcess` modul
 Callbacks: init/1, handle_call/3, handle_cast/2
 
 Elxiir Schools lesson : https://elixirschool.com/en/lessons/advanced/otp_concurrency
-
-Example: Do the example from ^^.
+Example 1: Do the example from ^^.
 
 Intro to Genserver: https://www.youtube.com/watch?v=C9iqVCcLbdU&t=60s
 
@@ -254,7 +255,7 @@ CheatSheet: https://elixir-lang.org/downloads/cheatsheets/gen-server.pdf
 
 **Synchronous vs. Asynchronous calls**
 
-Example: Implement a basic GenServer that holds and manipulates a state (e.g., a counter).
+Example 2: Implement a basic GenServer that holds and manipulates a state (e.g., a counter).
 
     defmodule Counter do
       use GenServer
@@ -288,8 +289,11 @@ Example: Implement a basic GenServer that holds and manipulates a state (e.g., a
     IO.puts(Counter.value(pid)) # Outputs 1
 
 
+Example 3:
 Scroll to  'Putting it together' -> Work through this example.
 https://samuelmullen.com/articles/elixir-processes-send-and-receive
+
+Exercise Question: To Come
 
 ## 6. OTP (Open Telecom Platform)
 
@@ -317,6 +321,7 @@ https://www.openmymind.net/Elixir-A-Little-Beyond-The-Basics-Part-7-supervisors/
 
 -   Child specifications define how a child process is started, how often it should be restarted, and other settings.
 
+Example: Fault Tolerance
 `
 
     defmodule MyWorker do
