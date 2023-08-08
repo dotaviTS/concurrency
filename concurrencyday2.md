@@ -293,6 +293,17 @@ Example 3:
 Scroll to  'Putting it together' -> Work through this example.
 https://samuelmullen.com/articles/elixir-processes-send-and-receive
 
+1. Command to install dictionary / wamerican
+
+```sh
+ sudo apt install wamerican
+```
+
+2. Command to count the number of lines in the dictionary
+
+```sh
+sudo apt install wamerican
+```
 Exercise Question: To Come
 
 ## 6. OTP (Open Telecom Platform)
