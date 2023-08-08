@@ -244,6 +244,8 @@ Callbacks: init/1, handle_call/3, handle_cast/2
 
 Elxiir Schools lesson : https://elixirschool.com/en/lessons/advanced/otp_concurrency
 
+Example: Do the example from ^^.
+
 Intro to Genserver: https://www.youtube.com/watch?v=C9iqVCcLbdU&t=60s
 
 https://elixir-lang.org/getting-started/mix-otp/genserver.html
@@ -284,6 +286,10 @@ Example: Implement a basic GenServer that holds and manipulates a state (e.g., a
     {:ok, pid} = Counter.start_link(0)
     Counter.increment(pid)
     IO.puts(Counter.value(pid)) # Outputs 1
+
+
+Scroll to  'Putting it together' -> Work through this example.
+https://samuelmullen.com/articles/elixir-processes-send-and-receive
 
 ## 6. OTP (Open Telecom Platform)
 
