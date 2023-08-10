@@ -242,20 +242,24 @@ Consider the above example of a linked process. Modify the `LinkedProcess` modul
 **Introduction to GenServer**
 - GenServer abstracts common client-server interactions, helping with state management and handling requests.
 - Basically a process with all the convenience functions built-in
-Callbacks: init/1, handle_call/3, handle_cast/2
+<b>Callbacks</b>: init/1, handle_call/3, handle_cast/2
 
-Elxiir Schools lesson : https://elixirschool.com/en/lessons/advanced/otp_concurrency
-Example 1: Do the example from ^^.
+### More on GenServer :
+  - https://elixir-lang.org/getting-started/mix-otp/genserver.html
 
-Intro to Genserver: https://www.youtube.com/watch?v=C9iqVCcLbdU&t=60s
+### CheatSheet :
 
-https://elixir-lang.org/getting-started/mix-otp/genserver.html
+   - Doc :  https://elixir-lang.org/downloads/cheatsheets/gen-server.pdf
+ 
 
-CheatSheet: https://elixir-lang.org/downloads/cheatsheets/gen-server.pdf
+
+
+
 
 **Synchronous vs. Asynchronous calls**
 
-Example 2: Implement a basic GenServer that holds and manipulates a state (e.g., a counter).
+### Example 1 : 
+Implement a basic GenServer that holds and manipulates a state (e.g., a counter).
 
     defmodule Counter do
       use GenServer
@@ -289,9 +293,21 @@ Example 2: Implement a basic GenServer that holds and manipulates a state (e.g.,
     IO.puts(Counter.value(pid)) # Outputs 1
 
 
-Example 3:
-Scroll to  'Putting it together' -> Work through this example.
-https://samuelmullen.com/articles/elixir-processes-send-and-receive
+### Example 2 :
+
+ <b>Elixir School lesson ( Queue example ) :</b>
+
+   - https://elixirschool.com/en/lessons/advanced/otp_concurrency
+
+ ### Example 3 :
+   <b>Intro to Genserver (Shopping Cart) : </b>
+   - https://www.youtube.com/watch?v=C9iqVCcLbdU&t=60s
+
+### Example 4 :
+Scroll to  <b>'Putting it together'</b> -> Work through this example.
+- Link : https://samuelmullen.com/articles/elixir-processes-send-and-receive
+
+### Steps for install dictionary : 
 
 1. Command to install dictionary / wamerican
 
@@ -302,10 +318,17 @@ https://samuelmullen.com/articles/elixir-processes-send-and-receive
 2. Command to count the number of lines in the dictionary
 
 ```sh
-sudo apt install wamerican
+ wc -l /usr/share/dict/american-english
 ```
-Exercise Question: To Come
+ 
 
+## <u>Summary</u>
+
+For this GenServer section upon completion you should be able to do the following : 
+
+
+<b> Examples </b> 
+  - There are 4 examples to complete for this section and they will give you better understanding on GenServer.
 ## 6. OTP (Open Telecom Platform)
 
 OTP Supervisors
