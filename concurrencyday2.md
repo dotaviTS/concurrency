@@ -1,5 +1,5 @@
 
-# Hello Hata
+# Concurrency
 ## Lesson plan 08-08-2023 - v 0.2
 
 Vscode mix new project_name.
